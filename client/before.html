@@ -1,0 +1,69 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>21点游戏</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome = 1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="description" content="21点小游戏,360作业题,小游戏,21点">
+	<meta name="keywords" content="21点小游戏,21点,21点,360,前端星">
+	<meta name="author" content="janna">
+	<meta name="COPYRIGHT" content="此网站版权归janna所有">
+	<link type="text/css" rel="stylesheet" href="css/default.css">
+	<script type="text/javascript" src="js/socket.io.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+    <div class="box">      <!-- 最大的盒子，承载所有的内容 -->
+      <div class="link link-miss">                            
+       <!--  第一个盒子  link为通用属性 ling-miss为自己的属性-->
+        <span class="icon"></span>
+        <a href="#" class="button" id="ksyx" data-title="点击此按钮开始游戏" onclick="showDialog()">
+          <span class="line line-top"></span>
+          <span class="line line-left"></span>
+          <span class="line line-right"></span>
+          <span class="line line-bottom"></span>   <!-- 飞出的四条线 -->
+          开始游戏
+         </a>
+      </div>
+      <div class="link link-play">                 <!--  第二个盒子 -->
+        <span class="icon"></span>
+        <a href="#" class="button" id="tcyx"  data-title="点击此按钮退出游戏" onclick="exitGames()">
+          <span class="line line-top"></span>
+          <span class="line line-left"></span>
+          <span class="line line-right"></span>
+          <span class="line line-bottom"></span>    <!-- 飞出的四条线 -->
+          退出游戏
+         </a>
+      </div>
+      <div class="link link-touch">                  <!--  第三个盒子 -->
+        <span class="icon"></span>
+        <a href="#" class="button"  data-title="点击此按钮查看游戏说明" onclick="translation()">
+          <span class="line line-top"></span>
+          <span class="line line-left"></span>
+          <span class="line line-right"></span>
+          <span class="line line-bottom"></span>            <!-- 飞出的四条线 -->
+          游戏说明
+        </a>
+      </div>
+    </div>
+    <div id="dialog" class="dialog">
+      <img src="image/right.png" alt="确认">
+      <form>
+        <label id="label">请输入你的用户名:</label>
+        <input type="text" name="name" id="input"/>
+        <input type="hidden" name="password" id="password"/>
+        <button type="button"  id="confirm" >确&nbsp;认</button>
+        <button type="button" name="cancel" id="cancel">取&nbsp;消</button>
+      </form>
+    </div>
+    <div id="yxsm" class="yxsm">
+       <img src="image/right.png" alt="确认">
+       <h3>暂无游戏说明<br/>(请刷新点击其他按钮)</h3>
+    </div>
+    <div class="mask" id="mask"></div> 
+    <script type="text/javascript" src="js/before.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url("../image/background1.jpg") center no-repeat; 
+	background-size: cover;  
+}
+.main_content{
+	width:100%;
+}
+.item_top{
+	margin:auto;
+	width:20%;
+	height:auto;
+	border:1px solid green;
+}
+.item_left{
+	width:20%;
+	height:auto;
+	border:1px solid green;
+	float: left;
+}
+.item_right{
+	width:20%;
+	height:auto;
+	border:1px solid green;
+	float: right;
+}
+.item_bottom{
+	clear: both;
+	width:20%;
+	height:auto;
+	display: bottom;
+	margin: 0 auto;
+	border:1px solid green;
+	margin-top: 30%;
+}
+
+.guide{
+	width:2%;
+	font-size: 1.2em;
+	background:red;
+	transition: left 1s;
+	-moz-transition: left 1s; /* Firefox 4 */
+	-webkit-transition: left 1s; /* Safari 和 Chrome */
+	-o-transition: left 1s; /* Opera */
+}
+.section{
+	width:10%;
+	height:auto;
+	position: fixed;
+	right: 0;
+	left:100%;
+	top:50%;
+	background: #ffffff;
+	border:1px solid #2ecc71;
+	transition: left 1s;
+	-moz-transition: left 1s; /* Firefox 4 */
+	-webkit-transition: left 1s; /* Safari 和 Chrome */
+	-o-transition: left 1s; /* Opera */
+}
+.section:hover{
+	left:90%;
+}
+.section h3{
+	width: 20%;
+	margin-left:-22%; 
+	background: #ffffff;
+	font-size: 1.5em;
+	border:1px solid #2ecc71;
+	float:left;
+}
+.section button{
+	background: #2ecc71;
+	color:#ffffff;
+	width:100px;
+	height:30px;
+	margin: 10px;
+	margin-left: 15%;
+	font-size:1em;
+	border-radius: 5px;
+}
+.section button:hover{
+	background: rgba(52,83,145);
+
+}
