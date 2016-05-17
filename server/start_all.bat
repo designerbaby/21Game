@@ -1,0 +1,1 @@
+start /b "" forever start proxy.js & start /b "" forever start game21.js & start /b "" forever start accounts.js & start /b "" forever start httpserver.js
